@@ -1339,3 +1339,539 @@ from returns
 [0m15:21:58.194122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002168211A850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216DCCE2850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216E0C2E970>]}
 [0m15:21:58.194603 [debug] [MainThread]: Flushing usage events
 [0m15:21:59.615344 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:29:52.994370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023481DB6E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002348462FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002348462F9D0>]}
+
+
+============================== 18:29:53.004624 | 7b4e61b9-f0ba-4176-aab4-93aa36496f52 ==============================
+[0m18:29:53.004624 [info ] [MainThread]: Running with dbt=1.12.4
+[0m18:29:53.006280 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m18:29:54.675644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7b4e61b9-f0ba-4176-aab4-93aa36496f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234825123F0>]}
+[0m18:29:54.771733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7b4e61b9-f0ba-4176-aab4-93aa36496f52', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234818BFBD0>]}
+[0m18:29:54.773059 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:29:55.156297 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m18:29:55.407307 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m18:29:55.407850 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\marts_model.yml
+[0m18:29:55.700866 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\marts\marts_model.yml:
+  	test definition dictionary must have exactly one key, got [('dbt_utils.unique_combination_of_columns', {'combination_of_columns': ['date', 'base', 'target']}), ('enabled', False)] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m18:29:55.702436 [debug] [MainThread]: Command `dbt test` failed at 18:29:55.702250 after 2.97 seconds
+[0m18:29:55.702897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A73C2350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A73C2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000234A77206E0>]}
+[0m18:29:55.703354 [debug] [MainThread]: Flushing usage events
+[0m18:29:57.275382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:31:54.463404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F1836E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F409BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F409B9D0>]}
+
+
+============================== 18:31:54.468260 | 17828b92-6e74-48a3-a7ed-18677119826d ==============================
+[0m18:31:54.468260 [info ] [MainThread]: Running with dbt=1.12.4
+[0m18:31:54.469610 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m18:31:55.539865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '17828b92-6e74-48a3-a7ed-18677119826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F1FA23F0>]}
+[0m18:31:55.588670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '17828b92-6e74-48a3-a7ed-18677119826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F036FBD0>]}
+[0m18:31:55.589308 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:31:55.829281 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m18:31:55.952431 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m18:31:55.953044 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\marts_model.yml
+[0m18:31:56.307659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '17828b92-6e74-48a3-a7ed-18677119826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207974B2B50>]}
+[0m18:31:56.396077 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m18:31:56.399327 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m18:31:56.430336 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m18:31:56.463781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '17828b92-6e74-48a3-a7ed-18677119826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207988E68A0>]}
+[0m18:31:56.464696 [info ] [MainThread]: Found 5 models, 12 data tests, 1 seed, 1 source, 561 macros
+[0m18:31:56.465538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '17828b92-6e74-48a3-a7ed-18677119826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207986959B0>]}
+[0m18:31:56.469120 [info ] [MainThread]: 
+[0m18:31:56.469781 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m18:31:56.470386 [info ] [MainThread]: 
+[0m18:31:56.471040 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m18:31:56.475143 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m18:31:56.475715 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:31:59.512882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '17828b92-6e74-48a3-a7ed-18677119826d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002079884CAE0>]}
+[0m18:31:59.513355 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:31:59.520244 [debug] [Thread-2 (]: Began running node test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a
+[0m18:31:59.520666 [debug] [Thread-1 (]: Began running node test.fx_pipeline.not_null_dim_date_date.78f11e7735
+[0m18:31:59.520943 [debug] [Thread-4 (]: Began running node test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722
+[0m18:31:59.521533 [debug] [Thread-3 (]: Began running node test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8
+[0m18:31:59.521200 [info ] [Thread-2 (]: 2 of 12 START test not_null_fct_fx_daily_returns_daily_return_pct .............. [RUN]
+[0m18:31:59.521882 [info ] [Thread-1 (]: 1 of 12 START test not_null_dim_date_date ...................................... [RUN]
+[0m18:31:59.522260 [info ] [Thread-4 (]: 4 of 12 START test not_null_fct_fx_daily_returns_target ........................ [RUN]
+[0m18:31:59.523274 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a'
+[0m18:31:59.522683 [info ] [Thread-3 (]: 3 of 12 START test not_null_fct_fx_daily_returns_date .......................... [RUN]
+[0m18:31:59.523867 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_dim_date_date.78f11e7735'
+[0m18:31:59.524319 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722'
+[0m18:31:59.524614 [debug] [Thread-2 (]: Began compiling node test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a
+[0m18:31:59.525099 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8'
+[0m18:31:59.525805 [debug] [Thread-1 (]: Began compiling node test.fx_pipeline.not_null_dim_date_date.78f11e7735
+[0m18:31:59.526754 [debug] [Thread-4 (]: Began compiling node test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722
+[0m18:31:59.552027 [debug] [Thread-2 (]: Writing injected SQL for node "test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a"
+[0m18:31:59.552458 [debug] [Thread-3 (]: Began compiling node test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8
+[0m18:31:59.560082 [debug] [Thread-1 (]: Writing injected SQL for node "test.fx_pipeline.not_null_dim_date_date.78f11e7735"
+[0m18:31:59.568141 [debug] [Thread-4 (]: Writing injected SQL for node "test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722"
+[0m18:31:59.578955 [debug] [Thread-3 (]: Writing injected SQL for node "test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8"
+[0m18:31:59.582755 [debug] [Thread-1 (]: Began executing node test.fx_pipeline.not_null_dim_date_date.78f11e7735
+[0m18:31:59.606413 [debug] [Thread-1 (]: Writing runtime sql for node "test.fx_pipeline.not_null_dim_date_date.78f11e7735"
+[0m18:31:59.607178 [debug] [Thread-4 (]: Began executing node test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722
+[0m18:31:59.608057 [debug] [Thread-2 (]: Began executing node test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a
+[0m18:31:59.610723 [debug] [Thread-4 (]: Writing runtime sql for node "test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722"
+[0m18:31:59.611593 [debug] [Thread-3 (]: Began executing node test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8
+[0m18:31:59.614123 [debug] [Thread-2 (]: Writing runtime sql for node "test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a"
+[0m18:31:59.616719 [debug] [Thread-3 (]: Writing runtime sql for node "test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8"
+[0m18:31:59.618679 [debug] [Thread-1 (]: On test.fx_pipeline.not_null_dim_date_date.78f11e7735: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_dim_date_date.78f11e7735"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date
+from `currency-tracker-507607`.`fx_marts`.`dim_date`
+where date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:31:59.619642 [debug] [Thread-4 (]: On test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select target
+from `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+where target is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:31:59.620524 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m18:31:59.621234 [debug] [Thread-3 (]: On test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date
+from `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+where date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:31:59.622048 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m18:31:59.624552 [debug] [Thread-2 (]: On test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select daily_return_pct
+from `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+where daily_return_pct is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:31:59.625436 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m18:31:59.629860 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m18:32:01.346546 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:098d9f89-564d-4527-b2b7-79b8b1bd4a48&page=queryresults
+[0m18:32:01.369348 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:1e5dbb82-5b28-430c-9fa2-5ca00b3b6f97&page=queryresults
+[0m18:32:01.473273 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:96a030f1-cc3d-4e63-9c17-607273de662a&page=queryresults
+[0m18:32:01.670592 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:7e3186a0-e387-4cd1-b9e2-5e5d705af3ae&page=queryresults
+[0m18:32:01.824801 [debug] [Thread-4 (]: SQL status: OK in 0.477 seconds
+[0m18:32:01.997630 [debug] [Thread-1 (]: SQL status: OK in 0.628 seconds
+[0m18:32:02.276774 [debug] [Thread-3 (]: SQL status: OK in 0.803 seconds
+[0m18:32:02.614883 [debug] [Thread-2 (]: SQL status: OK in 0.943 seconds
+[0m18:32:02.873772 [info ] [Thread-4 (]: 4 of 12 PASS not_null_fct_fx_daily_returns_target .............................. [[32mPASS[0m in 3.35s]
+[0m18:32:02.874894 [debug] [Thread-4 (]: Finished running node test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722
+[0m18:32:02.875254 [debug] [Thread-4 (]: Began running node test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa
+[0m18:32:02.875625 [info ] [Thread-4 (]: 5 of 12 START test not_null_fct_fx_rates_date .................................. [RUN]
+[0m18:32:02.876146 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_fct_fx_daily_returns_target.fa795d9722, now test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa)
+[0m18:32:02.876449 [debug] [Thread-4 (]: Began compiling node test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa
+[0m18:32:02.882685 [debug] [Thread-4 (]: Writing injected SQL for node "test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa"
+[0m18:32:02.885585 [debug] [Thread-4 (]: Began executing node test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa
+[0m18:32:02.887964 [debug] [Thread-4 (]: Writing runtime sql for node "test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa"
+[0m18:32:02.889198 [debug] [Thread-4 (]: On test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date
+from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`
+where date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:02.890271 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:32:02.930847 [info ] [Thread-1 (]: 1 of 12 PASS not_null_dim_date_date ............................................ [[32mPASS[0m in 3.41s]
+[0m18:32:02.931880 [debug] [Thread-1 (]: Finished running node test.fx_pipeline.not_null_dim_date_date.78f11e7735
+[0m18:32:02.932312 [debug] [Thread-1 (]: Began running node test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839
+[0m18:32:02.932668 [info ] [Thread-1 (]: 6 of 12 START test not_null_fct_fx_rates_rate .................................. [RUN]
+[0m18:32:02.933429 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_dim_date_date.78f11e7735, now test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839)
+[0m18:32:02.934117 [debug] [Thread-1 (]: Began compiling node test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839
+[0m18:32:02.947630 [debug] [Thread-1 (]: Writing injected SQL for node "test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839"
+[0m18:32:02.949312 [debug] [Thread-1 (]: Began executing node test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839
+[0m18:32:02.951288 [debug] [Thread-1 (]: Writing runtime sql for node "test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839"
+[0m18:32:02.952517 [debug] [Thread-1 (]: On test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select rate
+from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`
+where rate is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:02.953062 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:32:03.362146 [info ] [Thread-3 (]: 3 of 12 PASS not_null_fct_fx_daily_returns_date ................................ [[32mPASS[0m in 3.84s]
+[0m18:32:03.363674 [debug] [Thread-3 (]: Finished running node test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8
+[0m18:32:03.364031 [debug] [Thread-3 (]: Began running node test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979
+[0m18:32:03.364300 [info ] [Thread-3 (]: 7 of 12 START test not_null_fct_fx_rates_target ................................ [RUN]
+[0m18:32:03.365272 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_fct_fx_daily_returns_date.06879cf1d8, now test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979)
+[0m18:32:03.366136 [debug] [Thread-3 (]: Began compiling node test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979
+[0m18:32:03.379330 [debug] [Thread-3 (]: Writing injected SQL for node "test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979"
+[0m18:32:03.380464 [debug] [Thread-3 (]: Began executing node test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979
+[0m18:32:03.382229 [debug] [Thread-3 (]: Writing runtime sql for node "test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979"
+[0m18:32:03.383486 [debug] [Thread-3 (]: On test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select target
+from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`
+where target is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:03.383976 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:32:03.652890 [info ] [Thread-2 (]: 2 of 12 PASS not_null_fct_fx_daily_returns_daily_return_pct .................... [[32mPASS[0m in 4.13s]
+[0m18:32:03.653631 [debug] [Thread-2 (]: Finished running node test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a
+[0m18:32:03.653976 [debug] [Thread-2 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m18:32:03.654267 [info ] [Thread-2 (]: 8 of 12 START test not_null_stg_fx_rates_base_currency ......................... [RUN]
+[0m18:32:03.654761 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_fct_fx_daily_returns_daily_return_pct.5b8cf8da5a, now test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d)
+[0m18:32:03.655134 [debug] [Thread-2 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m18:32:03.660112 [debug] [Thread-2 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d"
+[0m18:32:03.661152 [debug] [Thread-2 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m18:32:03.662846 [debug] [Thread-2 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d"
+[0m18:32:03.663764 [debug] [Thread-2 (]: On test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select base_currency
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where base_currency is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:03.664351 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:32:04.265296 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:53315196-5051-4fb0-95b6-dcb3b60cfe53&page=queryresults
+[0m18:32:04.300334 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:688b5e25-aee5-401b-b3e1-e7dd0a323bfd&page=queryresults
+[0m18:32:04.596151 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:5afcb804-08a3-42ea-b9c4-6e9654052efe&page=queryresults
+[0m18:32:04.776462 [debug] [Thread-4 (]: SQL status: OK in 0.510 seconds
+[0m18:32:05.087206 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:ac128ad1-76df-497d-be55-c1667d237131&page=queryresults
+[0m18:32:05.141539 [debug] [Thread-1 (]: SQL status: OK in 0.840 seconds
+[0m18:32:05.206204 [debug] [Thread-3 (]: SQL status: OK in 0.609 seconds
+[0m18:32:05.613895 [debug] [Thread-2 (]: SQL status: OK in 0.526 seconds
+[0m18:32:05.708002 [info ] [Thread-4 (]: 5 of 12 PASS not_null_fct_fx_rates_date ........................................ [[32mPASS[0m in 2.83s]
+[0m18:32:05.709736 [debug] [Thread-4 (]: Finished running node test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa
+[0m18:32:05.710603 [debug] [Thread-4 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m18:32:05.711061 [info ] [Thread-4 (]: 9 of 12 START test not_null_stg_fx_rates_exchange_rate ......................... [RUN]
+[0m18:32:05.711587 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_fct_fx_rates_date.30c18f5eaa, now test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707)
+[0m18:32:05.711892 [debug] [Thread-4 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m18:32:05.718850 [debug] [Thread-4 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707"
+[0m18:32:05.719714 [debug] [Thread-4 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m18:32:05.721147 [debug] [Thread-4 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707"
+[0m18:32:05.725393 [debug] [Thread-4 (]: On test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select exchange_rate
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where exchange_rate is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:05.726843 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m18:32:06.145787 [info ] [Thread-1 (]: 6 of 12 PASS not_null_fct_fx_rates_rate ........................................ [[32mPASS[0m in 3.21s]
+[0m18:32:06.147558 [debug] [Thread-1 (]: Finished running node test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839
+[0m18:32:06.148416 [debug] [Thread-1 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m18:32:06.149137 [info ] [Thread-1 (]: 10 of 12 START test not_null_stg_fx_rates_rate_date ............................ [RUN]
+[0m18:32:06.150398 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_fct_fx_rates_rate.5fd32a8839, now test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767)
+[0m18:32:06.151088 [debug] [Thread-1 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m18:32:06.159038 [debug] [Thread-1 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767"
+[0m18:32:06.160440 [debug] [Thread-1 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m18:32:06.163052 [debug] [Thread-1 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767"
+[0m18:32:06.164026 [debug] [Thread-1 (]: On test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select rate_date
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where rate_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:06.164454 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:32:06.242097 [info ] [Thread-3 (]: 7 of 12 PASS not_null_fct_fx_rates_target ...................................... [[32mPASS[0m in 2.88s]
+[0m18:32:06.243253 [debug] [Thread-3 (]: Finished running node test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979
+[0m18:32:06.243763 [debug] [Thread-3 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m18:32:06.244049 [info ] [Thread-3 (]: 11 of 12 START test not_null_stg_fx_rates_target_currency ...................... [RUN]
+[0m18:32:06.244559 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_fct_fx_rates_target.0d7cbb6979, now test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b)
+[0m18:32:06.244825 [debug] [Thread-3 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m18:32:06.253025 [debug] [Thread-3 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b"
+[0m18:32:06.254359 [debug] [Thread-3 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m18:32:06.256411 [debug] [Thread-3 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b"
+[0m18:32:06.257433 [debug] [Thread-3 (]: On test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select target_currency
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where target_currency is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:06.258046 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m18:32:06.546382 [info ] [Thread-2 (]: 8 of 12 PASS not_null_stg_fx_rates_base_currency ............................... [[32mPASS[0m in 2.89s]
+[0m18:32:06.547221 [debug] [Thread-2 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m18:32:06.547662 [debug] [Thread-2 (]: Began running node test.fx_pipeline.unique_dim_date_date.dd069a8d31
+[0m18:32:06.548044 [info ] [Thread-2 (]: 12 of 12 START test unique_dim_date_date ....................................... [RUN]
+[0m18:32:06.548768 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d, now test.fx_pipeline.unique_dim_date_date.dd069a8d31)
+[0m18:32:06.549187 [debug] [Thread-2 (]: Began compiling node test.fx_pipeline.unique_dim_date_date.dd069a8d31
+[0m18:32:06.557370 [debug] [Thread-2 (]: Writing injected SQL for node "test.fx_pipeline.unique_dim_date_date.dd069a8d31"
+[0m18:32:06.558369 [debug] [Thread-2 (]: Began executing node test.fx_pipeline.unique_dim_date_date.dd069a8d31
+[0m18:32:06.560279 [debug] [Thread-2 (]: Writing runtime sql for node "test.fx_pipeline.unique_dim_date_date.dd069a8d31"
+[0m18:32:06.561249 [debug] [Thread-2 (]: On test.fx_pipeline.unique_dim_date_date.dd069a8d31: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.unique_dim_date_date.dd069a8d31"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select date as unique_field
+  from `currency-tracker-507607`.`fx_marts`.`dim_date`
+  where date is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m18:32:06.561674 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m18:32:06.813485 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:6b764937-2f8a-4c65-82ed-01f6794ff0c1&page=queryresults
+[0m18:32:07.284381 [debug] [Thread-4 (]: SQL status: OK in 0.470 seconds
+[0m18:32:07.556341 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:81fbaa4b-45dd-498c-a0c8-344d2b30d551&page=queryresults
+[0m18:32:07.559815 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:ac36b43e-0e79-4ba5-8f9a-b7ade5ccf112&page=queryresults
+[0m18:32:07.743305 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:b94d76f7-d92d-4dea-ae75-71d51250eef9&page=queryresults
+[0m18:32:08.023915 [debug] [Thread-1 (]: SQL status: OK in 0.467 seconds
+[0m18:32:08.081577 [debug] [Thread-3 (]: SQL status: OK in 0.521 seconds
+[0m18:32:08.193545 [debug] [Thread-2 (]: SQL status: OK in 0.450 seconds
+[0m18:32:08.340459 [info ] [Thread-4 (]: 9 of 12 PASS not_null_stg_fx_rates_exchange_rate ............................... [[32mPASS[0m in 2.63s]
+[0m18:32:08.341811 [debug] [Thread-4 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m18:32:09.093214 [info ] [Thread-1 (]: 10 of 12 PASS not_null_stg_fx_rates_rate_date .................................. [[32mPASS[0m in 2.94s]
+[0m18:32:09.094781 [debug] [Thread-1 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m18:32:09.120373 [info ] [Thread-3 (]: 11 of 12 PASS not_null_stg_fx_rates_target_currency ............................ [[32mPASS[0m in 2.88s]
+[0m18:32:09.121057 [debug] [Thread-3 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m18:32:09.189100 [info ] [Thread-2 (]: 12 of 12 PASS unique_dim_date_date ............................................. [[32mPASS[0m in 2.64s]
+[0m18:32:09.190652 [debug] [Thread-2 (]: Finished running node test.fx_pipeline.unique_dim_date_date.dd069a8d31
+[0m18:32:09.193698 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:32:09.194321 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:32:09.194571 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m18:32:09.194765 [debug] [MainThread]: Connection 'test.fx_pipeline.unique_dim_date_date.dd069a8d31' was properly closed.
+[0m18:32:09.194950 [debug] [MainThread]: Connection 'test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767' was properly closed.
+[0m18:32:09.195149 [debug] [MainThread]: Connection 'test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707' was properly closed.
+[0m18:32:09.195339 [debug] [MainThread]: Connection 'test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b' was properly closed.
+[0m18:32:09.195578 [info ] [MainThread]: 
+[0m18:32:09.196096 [info ] [MainThread]: Finished running 12 data tests in 0 hours 0 minutes and 12.72 seconds (12.72s).
+[0m18:32:09.199140 [debug] [MainThread]: Command end result
+[0m18:32:09.252010 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m18:32:09.255882 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m18:32:09.260500 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m18:32:09.268481 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m18:32:09.269124 [info ] [MainThread]: 
+[0m18:32:09.269983 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:32:09.270616 [info ] [MainThread]: 
+[0m18:32:09.271023 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=12
+[0m18:32:09.272114 [debug] [MainThread]: Command `dbt test` succeeded at 18:32:09.271952 after 14.97 seconds
+[0m18:32:09.272721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207F3F11CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002079897B280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002079897AD00>]}
+[0m18:32:09.273381 [debug] [MainThread]: Flushing usage events
+[0m18:32:10.629081 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: fct_fx_rates
+    description: "Daily exchange rates per currency against USD."
+    columns:
+      - name: date
+        tests:
+          - not_null
+      - name: target
+        tests:
+          - not_null
+      - name: rate
+        tests:
+          - not_null
+
+  - name: fct_fx_daily_returns
+    description: "Calculated day-over-day returns for each currency pair."
+    columns:
+      - name: date
+        tests:
+          - not_null
+      - name: target
+        tests:
+          - not_null
+      - name: daily_return_pct
+        tests:
+          - not_null
+
+  - name: dim_date
+    description: "Analytics calendar dimension."
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,10 @@
+fx_pipeline:
+  target: prod
+  outputs:
+    prod:
+      type: bigquery
+      method: oauth
+      project: currency-tracker-507607
+      dataset: fx_marts
+      threads: 4
+      location: US
