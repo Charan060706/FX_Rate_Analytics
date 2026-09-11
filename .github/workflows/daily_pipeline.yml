@@ -24,9 +24,6 @@ jobs:
           workload_identity_provider: 'projects/793871106073/locations/global/workloadIdentityPools/github-pool/providers/github-provider'
           service_account: 'fx-pipeline-sa@currency-tracker-507607.iam.gserviceaccount.com'
 
-      - name: Set GOOGLE_APPLICATION_CREDENTIALS
-        run: echo "GOOGLE_APPLICATION_CREDENTIALS=${{ steps.auth.outputs.credentials_file_path }}" >> $GITHUB_ENV
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -44,6 +41,8 @@ jobs:
         run: pip install dbt-bigquery
 
       - name: Run dbt Build
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.auth.outputs.credentials_file_path }}
         run: |
           cd dbt_project
           dbt build --profiles-dir .
