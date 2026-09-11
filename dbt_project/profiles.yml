@@ -8,3 +8,5 @@ fx_pipeline:
       dataset: fx_marts
       threads: 4
       location: US
+      priority: interactive
+      impersonate_service_account: fx-pipeline-sa@currency-tracker-507607.iam.gserviceaccount.com
