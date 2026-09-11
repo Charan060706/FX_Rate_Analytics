@@ -3,10 +3,10 @@ fx_pipeline:
   outputs:
     prod:
       type: bigquery
-      method: oauth
+      method: service-account-json
       project: currency-tracker-507607
       dataset: fx_marts
       threads: 4
       location: US
       priority: interactive
-      impersonate_service_account: fx-pipeline-sa@currency-tracker-507607.iam.gserviceaccount.com
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
