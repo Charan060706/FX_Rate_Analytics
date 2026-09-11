@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: fx_raw
+    database: currency-tracker-507607
+    schema: fx_raw
+    tables:
+      - name: exchange_rates_raw
+        loaded_at_field: loaded_at
+        freshness:
+          warn_after: {count: 26, period: hour}
+          error_after: {count: 72, period: hour}

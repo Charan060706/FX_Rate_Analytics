@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_fx_rates
+    description: "Cleaned and deduplicated daily foreign exchange rates against USD."
+    columns:
+      - name: rate_date
+        description: "Date the ECB exchange rate was recorded."
+        tests:
+          - not_null
+
+      - name: base_currency
+        description: "Base currency code (USD)."
+        tests:
+          - not_null
+
+      - name: target_currency
+        description: "Target currency code."
+        tests:
+          - not_null
+
+      - name: exchange_rate
+        description: "Exchange rate multiplier from USD to target currency."
+        tests:
+          - not_null
+         

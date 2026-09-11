@@ -1,0 +1,16 @@
+name: 'fx_pipeline'
+version: '1.0.0'
+config-version: 2
+
+profile: 'fx_pipeline'
+
+model-paths: ["models"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+
+models:
+  fx_pipeline:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

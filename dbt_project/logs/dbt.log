@@ -1,0 +1,1341 @@
+[0m13:30:18.578262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021FE78E6E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021FE4AECCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021FEA14BB10>]}
+
+
+============================== 13:30:18.590446 | 229caae2-98ed-4676-8828-02092a6e18f3 ==============================
+[0m13:30:18.590446 [info ] [MainThread]: Running with dbt=1.12.4
+[0m13:30:18.592260 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt source freshness', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m13:30:26.596788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '229caae2-98ed-4676-8828-02092a6e18f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021FE80523F0>]}
+[0m13:30:26.743533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '229caae2-98ed-4676-8828-02092a6e18f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021FE641FBD0>]}
+[0m13:30:26.744777 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m13:30:27.509470 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m13:30:27.511824 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:30:27.513142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '229caae2-98ed-4676-8828-02092a6e18f3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F8CE39850>]}
+[0m13:30:27.562222 [warn ] [MainThread]: [[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `freshness` as a top-level property of `sources[0].tables[0]` in file
+`models\staging\sources.yml`. The `freshness` top-level property should be moved
+into the `config` of `sources[0].tables[0]`.
+[0m13:30:27.564081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '229caae2-98ed-4676-8828-02092a6e18f3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F8CE22C60>]}
+[0m13:30:33.086954 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\staging\stg_fx_rates.yml:
+  	test definition dictionary must have exactly one key, got [('dbt_expectations_or_custom', {'expression': '> 0'}), ('enabled', False)] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m13:30:33.089146 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:30:33.091093 [debug] [MainThread]: Command `dbt source freshness` failed at 13:30:33.090888 after 14.80 seconds
+[0m13:30:33.091726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021FEA0D5D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F8E69A270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021F8D3CCBB0>]}
+[0m13:30:33.092267 [debug] [MainThread]: Flushing usage events
+[0m13:30:34.890855 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:34:05.742736 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1061F6E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C108A73D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C108A739D0>]}
+
+
+============================== 13:34:05.754148 | 78eb9ff8-f786-4934-aa05-50a907699528 ==============================
+[0m13:34:05.754148 [info ] [MainThread]: Running with dbt=1.12.4
+[0m13:34:05.756183 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select staging', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m13:34:07.870615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78eb9ff8-f786-4934-aa05-50a907699528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1069723F0>]}
+[0m13:34:07.974723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78eb9ff8-f786-4934-aa05-50a907699528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C105CFFBD0>]}
+[0m13:34:07.975706 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m13:34:08.459180 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m13:34:08.460356 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:34:08.461134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '78eb9ff8-f786-4934-aa05-50a907699528', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C12A1C9850>]}
+[0m13:34:08.473474 [warn ] [MainThread]: [[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `freshness` as a top-level property of `sources[0].tables[0]` in file
+`models\staging\sources.yml`. The `freshness` top-level property should be moved
+into the `config` of `sources[0].tables[0]`.
+[0m13:34:08.474303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '78eb9ff8-f786-4934-aa05-50a907699528', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C12A1B2B70>]}
+[0m13:34:10.690659 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Invalid test config given in models\staging\stg_fx_rates.yml:
+  	test definition dictionary must have exactly one key, got [('dbt_expectations_or_custom', {'expression': '> 0'}), ('enabled', False)] instead (2 keys)
+  	@: UnparsedModelUpdate(original_file_path='mode...ne)
+[0m13:34:10.691832 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:34:10.693338 [debug] [MainThread]: Command `dbt run` failed at 13:34:10.693186 after 5.32 seconds
+[0m13:34:10.693800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C1089F7E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C12BA26270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C12A75CBB0>]}
+[0m13:34:10.694214 [debug] [MainThread]: Flushing usage events
+[0m13:34:12.422752 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:40:24.290499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026916EB6E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026919723D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269197239D0>]}
+
+
+============================== 13:40:24.299379 | e8dab85c-e2f8-4a19-aaa9-4efaa149a36e ==============================
+[0m13:40:24.299379 [info ] [MainThread]: Running with dbt=1.12.4
+[0m13:40:24.300700 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --select staging', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m13:40:25.978622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269176023F0>]}
+[0m13:40:26.072009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269169BFBD0>]}
+[0m13:40:26.072860 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m13:40:26.746044 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m13:40:26.747149 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:40:26.747931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002693AE89850>]}
+[0m13:40:26.760165 [warn ] [MainThread]: [[33mWARNING[0m][PropertyMovedToConfigDeprecation]: Deprecated functionality
+Found `freshness` as a top-level property of `sources[0].tables[0]` in file
+`models\staging\sources.yml`. The `freshness` top-level property should be moved
+into the `config` of `sources[0].tables[0]`.
+[0m13:40:26.761327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002693AE72B70>]}
+[0m13:40:29.064151 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fx_pipeline.marts
+[0m13:40:29.070165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002693C6E7230>]}
+[0m13:40:29.240529 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:40:29.244840 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:40:29.292419 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:40:29.314106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002693C94CBB0>]}
+[0m13:40:29.314887 [info ] [MainThread]: Found 1 model, 4 data tests, 1 source, 561 macros
+[0m13:40:29.316001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002693C931790>]}
+[0m13:40:29.317903 [info ] [MainThread]: 
+[0m13:40:29.318529 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:40:29.319063 [info ] [MainThread]: 
+[0m13:40:29.319793 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:40:29.320747 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607'
+[0m13:40:29.321019 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:40:35.752384 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m13:40:35.753309 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:40:37.209048 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002693C912D00>]}
+[0m13:40:37.209855 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:40:37.221457 [debug] [Thread-1 (]: Began running node model.fx_pipeline.stg_fx_rates
+[0m13:40:37.222730 [info ] [Thread-1 (]: 1 of 1 START sql view model fx_marts.stg_fx_rates .............................. [RUN]
+[0m13:40:37.224062 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.fx_pipeline.stg_fx_rates'
+[0m13:40:37.224392 [debug] [Thread-1 (]: Began compiling node model.fx_pipeline.stg_fx_rates
+[0m13:40:37.232078 [debug] [Thread-1 (]: Writing injected SQL for node "model.fx_pipeline.stg_fx_rates"
+[0m13:40:37.235853 [debug] [Thread-1 (]: Began executing node model.fx_pipeline.stg_fx_rates
+[0m13:40:37.276863 [debug] [Thread-1 (]: Writing runtime sql for node "model.fx_pipeline.stg_fx_rates"
+[0m13:40:37.280850 [debug] [Thread-1 (]: On model.fx_pipeline.stg_fx_rates: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.stg_fx_rates"} */
+
+
+  create or replace view `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+  OPTIONS()
+  as with raw_source as (
+    select 
+    cast(date as date) as rate_Date,
+    cast(base as string) as base_currency,
+    cast(target as string) as target_currency,
+    cast(rate as float64) as exchange_rate,
+    cast(loaded_at as timestamp) as loaded_at,
+    ROW_NUMBER() over(
+        PARTITION BY date,base,target
+        order by loaded_at DESC 
+    ) as dedupe_rank
+
+    from `currency-tracker-507607`.`fx_raw`.`exchange_rates_raw`
+)
+
+select rate_Date,base_currency,target_currency,exchange_rate,loaded_at from raw_source 
+where dedupe_rank = 1;
+
+
+[0m13:40:37.282162 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:40:38.809531 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:bc3a8b75-cd5e-46e9-9e87-6e982c12d497&page=queryresults
+[0m13:40:39.698628 [debug] [Thread-1 (]: SQL status: OK in 0.888 seconds
+[0m13:40:44.756518 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e8dab85c-e2f8-4a19-aaa9-4efaa149a36e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269175C0230>]}
+[0m13:40:44.757566 [info ] [Thread-1 (]: 1 of 1 OK created sql view model fx_marts.stg_fx_rates ......................... [[32mCREATE VIEW (0 processed)[0m in 7.53s]
+[0m13:40:44.759047 [debug] [Thread-1 (]: Finished running node model.fx_pipeline.stg_fx_rates
+[0m13:40:44.762717 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:40:44.763888 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:40:44.764475 [debug] [MainThread]: Connection 'list_currency-tracker-507607' was properly closed.
+[0m13:40:44.764955 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m13:40:44.765430 [debug] [MainThread]: Connection 'model.fx_pipeline.stg_fx_rates' was properly closed.
+[0m13:40:44.766767 [info ] [MainThread]: 
+[0m13:40:44.768212 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 15.45 seconds (15.45s).
+[0m13:40:44.770785 [debug] [MainThread]: Command end result
+[0m13:40:44.946456 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:40:44.950442 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:40:44.954806 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:40:44.962007 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m13:40:44.962732 [info ] [MainThread]: 
+[0m13:40:44.963572 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:40:44.964183 [info ] [MainThread]: 
+[0m13:40:44.964916 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m13:40:44.965767 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PropertyMovedToConfigDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m13:40:44.967218 [debug] [MainThread]: Command `dbt run` succeeded at 13:40:44.967004 after 20.92 seconds
+[0m13:40:44.967676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026915702750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000269175C64D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026919776970>]}
+[0m13:40:44.968380 [debug] [MainThread]: Flushing usage events
+[0m13:40:46.482559 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:41:14.925549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002584E146E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258509B3D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258509B39D0>]}
+
+
+============================== 13:41:14.930969 | 5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b ==============================
+[0m13:41:14.930969 [info ] [MainThread]: Running with dbt=1.12.4
+[0m13:41:14.931881 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select staging --show-all-deprecations', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m13:41:16.429630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002584E8B23F0>]}
+[0m13:41:16.494110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002584CC7FBD0>]}
+[0m13:41:16.494933 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m13:41:16.938882 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m13:41:17.251881 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:41:17.252736 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:41:17.253199 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:41:17.263357 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fx_pipeline.marts
+[0m13:41:17.273209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002587373DE50>]}
+[0m13:41:17.479025 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:41:17.486158 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:41:17.540717 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:41:17.560453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025873870500>]}
+[0m13:41:17.561417 [info ] [MainThread]: Found 1 model, 4 data tests, 1 source, 561 macros
+[0m13:41:17.562030 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002587387D630>]}
+[0m13:41:17.564329 [info ] [MainThread]: 
+[0m13:41:17.565850 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:41:17.567021 [info ] [MainThread]: 
+[0m13:41:17.569230 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:41:17.571845 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607'
+[0m13:41:17.572486 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:41:20.847536 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m13:41:20.847955 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:41:22.308368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025850A84460>]}
+[0m13:41:22.309134 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:41:22.316627 [debug] [Thread-1 (]: Began running node model.fx_pipeline.stg_fx_rates
+[0m13:41:22.317227 [info ] [Thread-1 (]: 1 of 1 START sql view model fx_marts.stg_fx_rates .............................. [RUN]
+[0m13:41:22.317922 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.fx_pipeline.stg_fx_rates'
+[0m13:41:22.318286 [debug] [Thread-1 (]: Began compiling node model.fx_pipeline.stg_fx_rates
+[0m13:41:22.326758 [debug] [Thread-1 (]: Writing injected SQL for node "model.fx_pipeline.stg_fx_rates"
+[0m13:41:22.327808 [debug] [Thread-1 (]: Began executing node model.fx_pipeline.stg_fx_rates
+[0m13:41:22.370712 [debug] [Thread-1 (]: Writing runtime sql for node "model.fx_pipeline.stg_fx_rates"
+[0m13:41:22.372652 [debug] [Thread-1 (]: On model.fx_pipeline.stg_fx_rates: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.stg_fx_rates"} */
+
+
+  create or replace view `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+  OPTIONS()
+  as with raw_source as (
+    select 
+    cast(date as date) as rate_Date,
+    cast(base as string) as base_currency,
+    cast(target as string) as target_currency,
+    cast(rate as float64) as exchange_rate,
+    cast(loaded_at as timestamp) as loaded_at,
+    ROW_NUMBER() over(
+        PARTITION BY date,base,target
+        order by loaded_at DESC 
+    ) as dedupe_rank
+
+    from `currency-tracker-507607`.`fx_raw`.`exchange_rates_raw`
+)
+
+select rate_Date,base_currency,target_currency,exchange_rate,loaded_at from raw_source 
+where dedupe_rank = 1;
+
+
+[0m13:41:22.373888 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:41:23.750900 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:207efd8d-68db-45e3-bae0-51a5ab0a427d&page=queryresults
+[0m13:41:24.728184 [debug] [Thread-1 (]: SQL status: OK in 0.976 seconds
+[0m13:41:24.803169 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5b6d9c0a-831d-409b-a10a-24c1dbbf7c8b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002587386A810>]}
+[0m13:41:24.803847 [info ] [Thread-1 (]: 1 of 1 OK created sql view model fx_marts.stg_fx_rates ......................... [[32mCREATE VIEW (0 processed)[0m in 2.48s]
+[0m13:41:24.804871 [debug] [Thread-1 (]: Finished running node model.fx_pipeline.stg_fx_rates
+[0m13:41:24.806830 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:41:24.807549 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:41:24.807939 [debug] [MainThread]: Connection 'list_currency-tracker-507607' was properly closed.
+[0m13:41:24.808284 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m13:41:24.808558 [debug] [MainThread]: Connection 'model.fx_pipeline.stg_fx_rates' was properly closed.
+[0m13:41:24.808857 [info ] [MainThread]: 
+[0m13:41:24.809267 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.24 seconds (7.24s).
+[0m13:41:24.810345 [debug] [MainThread]: Command end result
+[0m13:41:24.855990 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:41:24.860951 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:41:24.866838 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:41:24.880979 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m13:41:24.881878 [info ] [MainThread]: 
+[0m13:41:24.883160 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:41:24.884263 [info ] [MainThread]: 
+[0m13:41:24.885463 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m13:41:24.887713 [debug] [MainThread]: Command `dbt run` succeeded at 13:41:24.887415 after 10.19 seconds
+[0m13:41:24.888555 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025873F68100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258738C9BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000258738C9270>]}
+[0m13:41:24.889307 [debug] [MainThread]: Flushing usage events
+[0m13:41:26.461654 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:44:56.338907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001730E336E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017310BABD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017310BAB9D0>]}
+
+
+============================== 13:44:56.347699 | eb2d26cf-1462-479c-8571-22eb795f63cc ==============================
+[0m13:44:56.347699 [info ] [MainThread]: Running with dbt=1.12.4
+[0m13:44:56.349237 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test --select staging', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m13:44:57.974923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'eb2d26cf-1462-479c-8571-22eb795f63cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001730EAB23F0>]}
+[0m13:44:58.091708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'eb2d26cf-1462-479c-8571-22eb795f63cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001730DE3FBD0>]}
+[0m13:44:58.093439 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m13:44:58.720882 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m13:44:58.891991 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:44:58.892529 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:44:58.892888 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:44:58.899462 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fx_pipeline.marts
+[0m13:44:58.904286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'eb2d26cf-1462-479c-8571-22eb795f63cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017333929E50>]}
+[0m13:44:59.107776 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:44:59.111731 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:44:59.147804 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:44:59.199276 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'eb2d26cf-1462-479c-8571-22eb795f63cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017333A9BB60>]}
+[0m13:44:59.199914 [info ] [MainThread]: Found 1 model, 4 data tests, 1 source, 561 macros
+[0m13:44:59.200569 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb2d26cf-1462-479c-8571-22eb795f63cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017333AC1C50>]}
+[0m13:44:59.203217 [info ] [MainThread]: 
+[0m13:44:59.204008 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:44:59.204605 [info ] [MainThread]: 
+[0m13:44:59.205501 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:44:59.206794 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m13:44:59.207168 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:45:02.789420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'eb2d26cf-1462-479c-8571-22eb795f63cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017333A79980>]}
+[0m13:45:02.790525 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:45:02.799658 [debug] [Thread-4 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m13:45:02.801479 [debug] [Thread-1 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m13:45:02.800694 [info ] [Thread-4 (]: 4 of 4 START test not_null_stg_fx_rates_target_currency ........................ [RUN]
+[0m13:45:02.803427 [debug] [Thread-4 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b'
+[0m13:45:02.804169 [debug] [Thread-4 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m13:45:02.814527 [debug] [Thread-3 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m13:45:02.815990 [debug] [Thread-2 (]: Began running node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m13:45:02.802248 [info ] [Thread-1 (]: 1 of 4 START test not_null_stg_fx_rates_base_currency .......................... [RUN]
+[0m13:45:02.845496 [debug] [Thread-4 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b"
+[0m13:45:02.844699 [info ] [Thread-3 (]: 3 of 4 START test not_null_stg_fx_rates_rate_date .............................. [RUN]
+[0m13:45:02.847286 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d'
+[0m13:45:02.846530 [info ] [Thread-2 (]: 2 of 4 START test not_null_stg_fx_rates_exchange_rate .......................... [RUN]
+[0m13:45:02.849416 [debug] [Thread-3 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767'
+[0m13:45:02.850497 [debug] [Thread-1 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m13:45:02.852034 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707'
+[0m13:45:02.853062 [debug] [Thread-3 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m13:45:02.866537 [debug] [Thread-1 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d"
+[0m13:45:02.867746 [debug] [Thread-2 (]: Began compiling node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m13:45:02.876107 [debug] [Thread-4 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m13:45:02.882985 [debug] [Thread-3 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767"
+[0m13:45:02.897712 [debug] [Thread-2 (]: Writing injected SQL for node "test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707"
+[0m13:45:02.922570 [debug] [Thread-1 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m13:45:02.941674 [debug] [Thread-4 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b"
+[0m13:45:02.944034 [debug] [Thread-1 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d"
+[0m13:45:02.945090 [debug] [Thread-2 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m13:45:02.946124 [debug] [Thread-3 (]: Began executing node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m13:45:02.949295 [debug] [Thread-2 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707"
+[0m13:45:02.952087 [debug] [Thread-3 (]: Writing runtime sql for node "test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767"
+[0m13:45:02.954860 [debug] [Thread-1 (]: On test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select base_currency
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where base_currency is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:45:02.956200 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:45:02.961241 [debug] [Thread-4 (]: On test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select target_currency
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where target_currency is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:45:02.962321 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:45:02.964153 [debug] [Thread-3 (]: On test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select rate_date
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where rate_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:45:02.965684 [debug] [Thread-2 (]: On test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select exchange_rate
+from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+where exchange_rate is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m13:45:02.966794 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:45:02.969800 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:45:04.793917 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:996f55f7-1532-44d6-ab2c-ff8ae96496a1&page=queryresults
+[0m13:45:04.797314 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:e77fa51f-ef33-455e-8f8c-d72128bafc49&page=queryresults
+[0m13:45:04.800138 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:d969f7d1-e099-4cbd-b37e-0c8e88c904bc&page=queryresults
+[0m13:45:04.810419 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:962cbf27-4ca0-4b9a-8539-9391c5752ab5&page=queryresults
+[0m13:45:05.295024 [debug] [Thread-2 (]: SQL status: OK in 0.500 seconds
+[0m13:45:05.312652 [debug] [Thread-1 (]: SQL status: OK in 0.514 seconds
+[0m13:45:05.314987 [debug] [Thread-3 (]: SQL status: OK in 0.514 seconds
+[0m13:45:05.342283 [debug] [Thread-4 (]: SQL status: OK in 0.531 seconds
+[0m13:45:06.395197 [info ] [Thread-2 (]: 2 of 4 PASS not_null_stg_fx_rates_exchange_rate ................................ [[32mPASS[0m in 3.54s]
+[0m13:45:06.399305 [debug] [Thread-2 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707
+[0m13:45:06.398007 [info ] [Thread-3 (]: 3 of 4 PASS not_null_stg_fx_rates_rate_date .................................... [[32mPASS[0m in 3.55s]
+[0m13:45:06.401004 [debug] [Thread-3 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767
+[0m13:45:06.419742 [info ] [Thread-1 (]: 1 of 4 PASS not_null_stg_fx_rates_base_currency ................................ [[32mPASS[0m in 3.57s]
+[0m13:45:06.421535 [debug] [Thread-1 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d
+[0m13:45:06.727288 [info ] [Thread-4 (]: 4 of 4 PASS not_null_stg_fx_rates_target_currency .............................. [[32mPASS[0m in 3.92s]
+[0m13:45:06.729466 [debug] [Thread-4 (]: Finished running node test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b
+[0m13:45:06.732487 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:45:06.733394 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:45:06.733825 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m13:45:06.734148 [debug] [MainThread]: Connection 'test.fx_pipeline.not_null_stg_fx_rates_target_currency.bd883f766b' was properly closed.
+[0m13:45:06.734465 [debug] [MainThread]: Connection 'test.fx_pipeline.not_null_stg_fx_rates_base_currency.0bcf3d6d5d' was properly closed.
+[0m13:45:06.734807 [debug] [MainThread]: Connection 'test.fx_pipeline.not_null_stg_fx_rates_rate_date.5831d89767' was properly closed.
+[0m13:45:06.735159 [debug] [MainThread]: Connection 'test.fx_pipeline.not_null_stg_fx_rates_exchange_rate.8fc8c57707' was properly closed.
+[0m13:45:06.735716 [info ] [MainThread]: 
+[0m13:45:06.736632 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 7.53 seconds (7.53s).
+[0m13:45:06.739215 [debug] [MainThread]: Command end result
+[0m13:45:06.819087 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:45:06.828034 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:45:06.835431 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:45:06.853029 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m13:45:06.853861 [info ] [MainThread]: 
+[0m13:45:06.855006 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:45:06.856740 [info ] [MainThread]: 
+[0m13:45:06.857767 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m13:45:06.859650 [debug] [MainThread]: Command `dbt test` succeeded at 13:45:06.859380 after 10.73 seconds
+[0m13:45:06.860160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017310A21CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017333AA4EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017333AA7490>]}
+[0m13:45:06.860743 [debug] [MainThread]: Flushing usage events
+[0m13:45:08.372431 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:56:02.138429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180B10B6E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180B391FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180B391F9D0>]}
+
+
+============================== 13:56:02.147476 | 1e1215d0-2007-48d6-b411-7a28c4aa0f9b ==============================
+[0m13:56:02.147476 [info ] [MainThread]: Running with dbt=1.12.4
+[0m13:56:02.148468 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'invocation_command': 'dbt seed', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m13:56:08.407863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1e1215d0-2007-48d6-b411-7a28c4aa0f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180B18023F0>]}
+[0m13:56:08.454853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1e1215d0-2007-48d6-b411-7a28c4aa0f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180AFBEFBD0>]}
+[0m13:56:08.455570 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m13:56:09.012503 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m13:56:11.808101 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m13:56:11.808566 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://seeds\dim_currency.csv
+[0m13:56:12.005065 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.fx_pipeline.marts
+[0m13:56:12.008578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1e1215d0-2007-48d6-b411-7a28c4aa0f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180D66A0A50>]}
+[0m13:56:12.132731 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:56:12.158502 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:56:12.198813 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:56:12.212811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1e1215d0-2007-48d6-b411-7a28c4aa0f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180D6875310>]}
+[0m13:56:12.213819 [info ] [MainThread]: Found 1 model, 4 data tests, 1 seed, 1 source, 561 macros
+[0m13:56:12.214579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e1215d0-2007-48d6-b411-7a28c4aa0f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180D6898670>]}
+[0m13:56:12.216504 [info ] [MainThread]: 
+[0m13:56:12.217049 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:56:12.217627 [info ] [MainThread]: 
+[0m13:56:12.218440 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:56:12.219933 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607'
+[0m13:56:12.220456 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:56:16.680551 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m13:56:16.681449 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:56:18.035652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1e1215d0-2007-48d6-b411-7a28c4aa0f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180B39F8460>]}
+[0m13:56:18.036826 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:56:18.046700 [debug] [Thread-1 (]: Began running node seed.fx_pipeline.dim_currency
+[0m13:56:18.047749 [info ] [Thread-1 (]: 1 of 1 START seed file fx_marts.dim_currency ................................... [RUN]
+[0m13:56:18.049247 [debug] [Thread-1 (]: Acquiring new bigquery connection 'seed.fx_pipeline.dim_currency'
+[0m13:56:18.050030 [debug] [Thread-1 (]: Began compiling node seed.fx_pipeline.dim_currency
+[0m13:56:18.050738 [debug] [Thread-1 (]: Began executing node seed.fx_pipeline.dim_currency
+[0m13:56:22.477669 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m13:56:30.342925 [debug] [Thread-1 (]: On seed.fx_pipeline.dim_currency: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "seed.fx_pipeline.dim_currency"} */
+
+    alter table `currency-tracker-507607`.`fx_marts`.`dim_currency` set OPTIONS()
+  
+[0m13:56:31.296947 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:554fbcf0-73e4-4a36-a489-378e212fb8c9&page=queryresults
+[0m13:56:32.154515 [debug] [Thread-1 (]: SQL status: OK in 0.857 seconds
+[0m13:56:32.162496 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.fx_pipeline.dim_currency"
+[0m13:56:32.214290 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1e1215d0-2007-48d6-b411-7a28c4aa0f9b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180D6867F50>]}
+[0m13:56:32.215552 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file fx_marts.dim_currency ............................... [[32mINSERT 13[0m in 14.16s]
+[0m13:56:32.217071 [debug] [Thread-1 (]: Finished running node seed.fx_pipeline.dim_currency
+[0m13:56:32.219691 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:56:32.220946 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:56:32.221523 [debug] [MainThread]: Connection 'list_currency-tracker-507607' was properly closed.
+[0m13:56:32.222041 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m13:56:32.222624 [debug] [MainThread]: Connection 'seed.fx_pipeline.dim_currency' was properly closed.
+[0m13:56:32.223282 [info ] [MainThread]: 
+[0m13:56:32.224354 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 20.00 seconds (20.00s).
+[0m13:56:32.226356 [debug] [MainThread]: Command end result
+[0m13:56:32.274399 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m13:56:32.276969 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m13:56:32.279644 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m13:56:32.286163 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m13:56:32.286573 [info ] [MainThread]: 
+[0m13:56:32.287137 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:56:32.287642 [info ] [MainThread]: 
+[0m13:56:32.288037 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=1
+[0m13:56:32.288915 [debug] [MainThread]: Command `dbt seed` succeeded at 13:56:32.288803 after 30.44 seconds
+[0m13:56:32.289265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180D68A62B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180D68FBA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000180D68FBB10>]}
+[0m13:56:32.289594 [debug] [MainThread]: Flushing usage events
+[0m13:56:33.599885 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:14:34.308130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002169AEF6E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002169D763D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002169D7639D0>]}
+
+
+============================== 15:14:34.319142 | 379f1f59-f207-42fb-b777-ce8a58ba4fb9 ==============================
+[0m15:14:34.319142 [info ] [MainThread]: Running with dbt=1.12.4
+[0m15:14:34.320706 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt build --select marts', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m15:14:36.462857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '379f1f59-f207-42fb-b777-ce8a58ba4fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002169B6623F0>]}
+[0m15:14:36.516513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '379f1f59-f207-42fb-b777-ce8a58ba4fb9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002169A9FFBD0>]}
+[0m15:14:36.517169 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m15:14:36.958812 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m15:14:37.181784 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m15:14:37.182295 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\fct_fx_rolling_volataility.sql
+[0m15:14:37.182611 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\dim_date.sql
+[0m15:14:37.182853 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\fct_fx_daily_returns.sql
+[0m15:14:37.183079 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\fct_fx_rates.sql
+[0m15:14:37.447598 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.fx_pipeline.fct_fx_rolling_volataility' (models\marts\fct_fx_rolling_volataility.sql) depends on a node named 'fct_fx_daily_return' which was not found
+[0m15:14:37.449531 [debug] [MainThread]: Command `dbt build` failed at 15:14:37.449272 after 3.39 seconds
+[0m15:14:37.450312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216BEEC9450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216BEEC9850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216C046EF30>]}
+[0m15:14:37.451535 [debug] [MainThread]: Flushing usage events
+[0m15:14:38.759669 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:14:56.228127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170FCD76E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170FF5E3D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170FF5E39D0>]}
+
+
+============================== 15:14:56.237041 | d870b384-c9ec-4836-973d-bdfdeb163f6c ==============================
+[0m15:14:56.237041 [info ] [MainThread]: Running with dbt=1.12.4
+[0m15:14:56.238337 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt build --select marts', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m15:14:57.560044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170FD4E23F0>]}
+[0m15:14:57.606907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170FC87FBD0>]}
+[0m15:14:57.607538 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m15:14:57.874202 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m15:14:58.022429 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 4 files added, 0 files changed.
+[0m15:14:58.022882 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\dim_date.sql
+[0m15:14:58.023156 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\fct_fx_daily_returns.sql
+[0m15:14:58.023384 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\fct_fx_rolling_volataility.sql
+[0m15:14:58.023610 [debug] [MainThread]: Partial parsing: added file: fx_pipeline://models\marts\fct_fx_rates.sql
+[0m15:14:58.282695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A2515F50>]}
+[0m15:14:58.369831 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m15:14:58.373348 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m15:14:58.416391 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m15:14:58.464999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A282B7A0>]}
+[0m15:14:58.466231 [info ] [MainThread]: Found 5 models, 4 data tests, 1 seed, 1 source, 561 macros
+[0m15:14:58.469991 [info ] [MainThread]: 
+[0m15:14:58.471258 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:14:58.472209 [info ] [MainThread]: 
+[0m15:14:58.473661 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:14:58.482948 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607'
+[0m15:14:58.483958 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:15:01.391109 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m15:15:01.391904 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:15:03.046870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A28FB690>]}
+[0m15:15:03.047435 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:15:03.056941 [debug] [Thread-2 (]: Began running node model.fx_pipeline.fct_fx_rates
+[0m15:15:03.057966 [debug] [Thread-1 (]: Began running node model.fx_pipeline.dim_date
+[0m15:15:03.059177 [info ] [Thread-2 (]: 2 of 4 START sql incremental model fx_marts.fct_fx_rates ....................... [RUN]
+[0m15:15:03.061426 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_rates'
+[0m15:15:03.061731 [debug] [Thread-2 (]: Began compiling node model.fx_pipeline.fct_fx_rates
+[0m15:15:03.060305 [info ] [Thread-1 (]: 1 of 4 START sql table model fx_marts.dim_date ................................. [RUN]
+[0m15:15:03.070820 [debug] [Thread-2 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_rates"
+[0m15:15:03.071990 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.fx_pipeline.dim_date'
+[0m15:15:03.072523 [debug] [Thread-1 (]: Began compiling node model.fx_pipeline.dim_date
+[0m15:15:03.074118 [debug] [Thread-1 (]: Writing injected SQL for node "model.fx_pipeline.dim_date"
+[0m15:15:03.075574 [debug] [Thread-1 (]: Began executing node model.fx_pipeline.dim_date
+[0m15:15:03.106985 [debug] [Thread-2 (]: Began executing node model.fx_pipeline.fct_fx_rates
+[0m15:15:03.127714 [debug] [Thread-1 (]: Writing runtime sql for node "model.fx_pipeline.dim_date"
+[0m15:15:03.152099 [debug] [Thread-2 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_rates"
+[0m15:15:03.154464 [debug] [Thread-2 (]: On model.fx_pipeline.fct_fx_rates: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_rates"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+select rate_date as date,base_currency as base,target_currency as target,exchange_rate as rate,
+loaded_at from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+
+
+    );
+  
+[0m15:15:03.155768 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:15:03.156791 [debug] [Thread-1 (]: On model.fx_pipeline.dim_date: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.dim_date"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`dim_date`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with date_spine as(
+    select day_date from 
+    unnest(generate_date_array('2021-01-01', '2030-12-31', interval 1 day)) as day_date
+)
+
+select 
+   day_date as date  
+   extract(year from day_date) as year, 
+   extract(quarter from day_date) as quarter,
+   extract(month from day_date) as month,  
+   formate_date('%B',day_date) as month_name,
+   extract(day from day_date) as day_of_month, 
+   extract(dayofweek from day_date) as day_of_week, 
+   formate_date('%A',day_date) as day_name,
+   case
+      when extract(dayofweek from day_date) in (1,7) then true
+      else false
+    end as is_weekend
+
+from date_spine
+    );
+  
+[0m15:15:03.158916 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:15:04.655286 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:c5cf0364-e3e3-48d3-9163-0230dbfdca50&page=queryresults
+[0m15:15:04.656161 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:c5cf0364-e3e3-48d3-9163-0230dbfdca50&page=queryresults
+[0m15:15:04.775030 [debug] [Thread-1 (]: Database Error in model dim_date (models\marts\dim_date.sql)
+  Syntax error: Expected ")" but got keyword EXTRACT at [23:4]
+  compiled code at target\run\fx_pipeline\models\marts\dim_date.sql
+[0m15:15:04.777814 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A2A0B380>]}
+[0m15:15:04.778413 [error] [Thread-1 (]: 1 of 4 ERROR creating sql table model fx_marts.dim_date ........................ [[31mERROR[0m in 1.70s]
+[0m15:15:04.779112 [debug] [Thread-1 (]: Finished running node model.fx_pipeline.dim_date
+[0m15:15:04.779573 [debug] [Thread-7 (]: Marking all children of 'model.fx_pipeline.dim_date' to be skipped because of status 'error'.  Reason: Database Error in model dim_date (models\marts\dim_date.sql)
+  Syntax error: Expected ")" but got keyword EXTRACT at [23:4]
+  compiled code at target\run\fx_pipeline\models\marts\dim_date.sql.
+[0m15:15:05.154000 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:b281da2f-c147-4e47-ad33-3182d84e306a&page=queryresults
+[0m15:15:07.036413 [debug] [Thread-2 (]: SQL status: OK in 1.882 seconds
+[0m15:15:07.662703 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A291C050>]}
+[0m15:15:07.663374 [info ] [Thread-2 (]: 2 of 4 OK created sql incremental model fx_marts.fct_fx_rates .................. [[32mCREATE TABLE (17.5k rows, 581.7 KiB processed)[0m in 4.60s]
+[0m15:15:07.664105 [debug] [Thread-2 (]: Finished running node model.fx_pipeline.fct_fx_rates
+[0m15:15:07.664768 [debug] [Thread-3 (]: Began running node model.fx_pipeline.fct_fx_daily_returns
+[0m15:15:07.665223 [info ] [Thread-3 (]: 3 of 4 START sql table model fx_marts.fct_fx_daily_returns ..................... [RUN]
+[0m15:15:07.665845 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_daily_returns'
+[0m15:15:07.666184 [debug] [Thread-3 (]: Began compiling node model.fx_pipeline.fct_fx_daily_returns
+[0m15:15:07.668140 [debug] [Thread-3 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_daily_returns"
+[0m15:15:07.669582 [debug] [Thread-3 (]: Began executing node model.fx_pipeline.fct_fx_daily_returns
+[0m15:15:07.671983 [debug] [Thread-3 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_daily_returns"
+[0m15:15:07.672924 [debug] [Thread-3 (]: On model.fx_pipeline.fct_fx_daily_returns: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_daily_returns"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with base_rates as (
+    select date,base,target,rate,
+    lag(rate) over(
+        PARTITION by base,target
+        order by date 
+    ) as prev_rate 
+
+    from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`
+)
+
+select 
+  date,
+  base,target,rate,prev_rate,
+  case 
+     when prev_rate is null then 0.0
+     else round(((rate-prev_rate)/prev_rate)*100 , 4)
+
+  end as daily_return_pct
+
+from base_rates
+    );
+  
+[0m15:15:07.673952 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:15:08.985229 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:a15a8743-d145-45ac-a1c6-5a6ac82a7c4f&page=queryresults
+[0m15:15:11.733808 [debug] [Thread-3 (]: SQL status: OK in 2.748 seconds
+[0m15:15:12.378193 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A2949B20>]}
+[0m15:15:12.379528 [info ] [Thread-3 (]: 3 of 4 OK created sql table model fx_marts.fct_fx_daily_returns ................ [[32mCREATE TABLE (17.5k rows, 444.5 KiB processed)[0m in 4.71s]
+[0m15:15:12.381106 [debug] [Thread-3 (]: Finished running node model.fx_pipeline.fct_fx_daily_returns
+[0m15:15:12.382718 [debug] [Thread-4 (]: Began running node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:15:12.383614 [info ] [Thread-4 (]: 4 of 4 START sql table model fx_marts.fct_fx_rolling_volataility ............... [RUN]
+[0m15:15:12.384157 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_rolling_volataility'
+[0m15:15:12.384432 [debug] [Thread-4 (]: Began compiling node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:15:12.386561 [debug] [Thread-4 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_rolling_volataility"
+[0m15:15:12.389044 [debug] [Thread-4 (]: Began executing node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:15:12.392921 [debug] [Thread-4 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_rolling_volataility"
+[0m15:15:12.396353 [debug] [Thread-4 (]: On model.fx_pipeline.fct_fx_rolling_volataility: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_rolling_volataility"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`fct_fx_rolling_volataility`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with returns as (
+    select * from `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+)
+
+select
+  date,base,target,rate,daily_return_pct,
+  round(STDDEV(daily_return_pct) over(
+    PARTITION BY base,target
+    order by date 
+    rows between 6 preceding and current row
+  ),4) as rolling_volataility_7d,
+
+  round(stddev(daily_return_pct) over (
+        partition by base, target
+        order by date
+        rows between 29 preceding and current row
+    ), 4) as rolling_volatility_30d
+
+from returns
+    );
+  
+[0m15:15:12.397427 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:15:13.506704 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:da48a8db-166a-418f-9428-e969d5b4cbdd&page=queryresults
+[0m15:15:15.279699 [debug] [Thread-4 (]: SQL status: OK in 1.772 seconds
+[0m15:15:15.906701 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd870b384-c9ec-4836-973d-bdfdeb163f6c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A320AAD0>]}
+[0m15:15:15.907775 [info ] [Thread-4 (]: 4 of 4 OK created sql table model fx_marts.fct_fx_rolling_volataility .......... [[32mCREATE TABLE (17.5k rows, 581.3 KiB processed)[0m in 3.52s]
+[0m15:15:15.908955 [debug] [Thread-4 (]: Finished running node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:15:15.910921 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:15:15.911506 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:15:15.911754 [debug] [MainThread]: Connection 'list_currency-tracker-507607' was properly closed.
+[0m15:15:15.911952 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m15:15:15.912132 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_rates' was properly closed.
+[0m15:15:15.912317 [debug] [MainThread]: Connection 'model.fx_pipeline.dim_date' was properly closed.
+[0m15:15:15.912483 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_daily_returns' was properly closed.
+[0m15:15:15.912647 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_rolling_volataility' was properly closed.
+[0m15:15:15.912894 [info ] [MainThread]: 
+[0m15:15:15.913342 [info ] [MainThread]: Finished running 1 incremental model, 3 table models in 0 hours 0 minutes and 17.44 seconds (17.44s).
+[0m15:15:15.914494 [debug] [MainThread]: Command end result
+[0m15:15:15.961216 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m15:15:15.966708 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m15:15:15.971682 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m15:15:15.984534 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m15:15:15.985397 [info ] [MainThread]: 
+[0m15:15:15.986496 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:15:15.987610 [info ] [MainThread]: 
+[0m15:15:15.988488 [error] [MainThread]: [[31mERROR[0m]: in model dim_date (models\marts\dim_date.sql)
+[0m15:15:15.988880 [error] [MainThread]:   Database Error in model dim_date (models\marts\dim_date.sql)
+  Syntax error: Expected ")" but got keyword EXTRACT at [23:4]
+  compiled code at target\run\fx_pipeline\models\marts\dim_date.sql
+[0m15:15:15.989163 [info ] [MainThread]: 
+[0m15:15:15.989508 [info ] [MainThread]:   compiled code at target\compiled\fx_pipeline\models\marts\dim_date.sql
+[0m15:15:15.989788 [info ] [MainThread]: 
+[0m15:15:15.990141 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m15:15:15.991094 [debug] [MainThread]: Command `dbt build` failed at 15:15:15.990899 after 19.92 seconds
+[0m15:15:15.991676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170A0EA1ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170FB6E25D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000170FF632970>]}
+[0m15:15:15.992203 [debug] [MainThread]: Flushing usage events
+[0m15:15:17.842419 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:21:05.655100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC54746E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC56FBBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC56FBB9D0>]}
+
+
+============================== 15:21:05.662933 | 6954b132-cf40-4ea4-a196-52e67c9f971e ==============================
+[0m15:21:05.662933 [info ] [MainThread]: Running with dbt=1.12.4
+[0m15:21:05.664115 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt build --select marts', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m15:21:06.841515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC54EA23F0>]}
+[0m15:21:06.894074 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC5424FBD0>]}
+[0m15:21:06.894717 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m15:21:07.171662 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m15:21:07.347921 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:21:07.348472 [debug] [MainThread]: Partial parsing: updated file: fx_pipeline://models\marts\dim_date.sql
+[0m15:21:07.613175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC78D6DE50>]}
+[0m15:21:07.719112 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m15:21:07.722205 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m15:21:07.746378 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m15:21:07.771789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC7A02F6B0>]}
+[0m15:21:07.772235 [info ] [MainThread]: Found 5 models, 4 data tests, 1 seed, 1 source, 561 macros
+[0m15:21:07.773997 [info ] [MainThread]: 
+[0m15:21:07.774572 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:21:07.775109 [info ] [MainThread]: 
+[0m15:21:07.775907 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:21:07.779535 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607'
+[0m15:21:07.779875 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:21:10.260785 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m15:21:10.261716 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:21:11.621764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC7A12BCB0>]}
+[0m15:21:11.622489 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:21:11.631002 [debug] [Thread-1 (]: Began running node model.fx_pipeline.dim_date
+[0m15:21:11.632886 [debug] [Thread-2 (]: Began running node model.fx_pipeline.fct_fx_rates
+[0m15:21:11.632032 [info ] [Thread-1 (]: 1 of 4 START sql table model fx_marts.dim_date ................................. [RUN]
+[0m15:21:11.635376 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.fx_pipeline.dim_date'
+[0m15:21:11.634215 [info ] [Thread-2 (]: 2 of 4 START sql incremental model fx_marts.fct_fx_rates ....................... [RUN]
+[0m15:21:11.636589 [debug] [Thread-1 (]: Began compiling node model.fx_pipeline.dim_date
+[0m15:21:11.637713 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_rates'
+[0m15:21:11.646428 [debug] [Thread-1 (]: Writing injected SQL for node "model.fx_pipeline.dim_date"
+[0m15:21:11.647474 [debug] [Thread-2 (]: Began compiling node model.fx_pipeline.fct_fx_rates
+[0m15:21:11.658130 [debug] [Thread-2 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_rates"
+[0m15:21:11.659399 [debug] [Thread-1 (]: Began executing node model.fx_pipeline.dim_date
+[0m15:21:11.703184 [debug] [Thread-2 (]: Began executing node model.fx_pipeline.fct_fx_rates
+[0m15:21:11.734872 [debug] [Thread-1 (]: Writing runtime sql for node "model.fx_pipeline.dim_date"
+[0m15:21:11.747083 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:21:11.749075 [debug] [Thread-1 (]: On model.fx_pipeline.dim_date: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.dim_date"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`dim_date`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with date_spine as(
+    select day_date from 
+    unnest(generate_date_array('2021-01-01', '2030-12-31', interval 1 day)) as day_date
+)
+
+select 
+   day_date as date, 
+   extract(year from day_date) as year, 
+   extract(quarter from day_date) as quarter,
+   extract(month from day_date) as month,  
+   formate_date('%B',day_date) as month_name,
+   extract(day from day_date) as day_of_month, 
+   extract(dayofweek from day_date) as day_of_week, 
+   formate_date('%A',day_date) as day_name,
+   case
+      when extract(dayofweek from day_date) in (1,7) then true
+      else false
+    end as is_weekend
+
+from date_spine
+    );
+  
+[0m15:21:11.749851 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:21:12.760247 [debug] [Thread-2 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_rates"
+[0m15:21:12.761366 [debug] [Thread-2 (]: On model.fx_pipeline.fct_fx_rates: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_rates"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+        
+    
+
+    
+
+    merge into `currency-tracker-507607`.`fx_marts`.`fct_fx_rates` as DBT_INTERNAL_DEST
+        using (
+
+select rate_date as date,base_currency as base,target_currency as target,exchange_rate as rate,
+loaded_at from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+
+
+    where rate_date > (select max(date) from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`)
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                    DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date
+                ) and (
+                    DBT_INTERNAL_SOURCE.base = DBT_INTERNAL_DEST.base
+                ) and (
+                    DBT_INTERNAL_SOURCE.target = DBT_INTERNAL_DEST.target
+                )
+
+    
+    when matched then update set
+        `date` = DBT_INTERNAL_SOURCE.`date`,`base` = DBT_INTERNAL_SOURCE.`base`,`target` = DBT_INTERNAL_SOURCE.`target`,`rate` = DBT_INTERNAL_SOURCE.`rate`,`loaded_at` = DBT_INTERNAL_SOURCE.`loaded_at`
+    
+
+    when not matched then insert
+        (`date`, `base`, `target`, `rate`, `loaded_at`)
+    values
+        (`date`, `base`, `target`, `rate`, `loaded_at`)
+
+
+    
+[0m15:21:13.014344 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:352981ab-4a09-4a26-a38e-c01d3782c66b&page=queryresults
+[0m15:21:13.472516 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:352981ab-4a09-4a26-a38e-c01d3782c66b&page=queryresults
+[0m15:21:13.490527 [debug] [Thread-1 (]: Database Error in model dim_date (models\marts\dim_date.sql)
+  Function not found: formate_date; Did you mean format_date? at [26:4]
+  compiled code at target\run\fx_pipeline\models\marts\dim_date.sql
+[0m15:21:13.492894 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC7A63F860>]}
+[0m15:21:13.493593 [error] [Thread-1 (]: 1 of 4 ERROR creating sql table model fx_marts.dim_date ........................ [[31mERROR[0m in 1.86s]
+[0m15:21:13.494513 [debug] [Thread-1 (]: Finished running node model.fx_pipeline.dim_date
+[0m15:21:13.495213 [debug] [Thread-7 (]: Marking all children of 'model.fx_pipeline.dim_date' to be skipped because of status 'error'.  Reason: Database Error in model dim_date (models\marts\dim_date.sql)
+  Function not found: formate_date; Did you mean format_date? at [26:4]
+  compiled code at target\run\fx_pipeline\models\marts\dim_date.sql.
+[0m15:21:13.826830 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:0f9bc25a-9d06-4765-86f5-eacfe55fa6ea&page=queryresults
+[0m15:21:15.717386 [debug] [Thread-2 (]: SQL status: OK in 1.890 seconds
+[0m15:21:15.828951 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC7A140290>]}
+[0m15:21:15.829866 [info ] [Thread-2 (]: 2 of 4 OK created sql incremental model fx_marts.fct_fx_rates .................. [[32mMERGE (0.0 rows, 1.1 MiB processed)[0m in 4.19s]
+[0m15:21:15.830972 [debug] [Thread-2 (]: Finished running node model.fx_pipeline.fct_fx_rates
+[0m15:21:15.831896 [debug] [Thread-3 (]: Began running node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:15.832443 [info ] [Thread-3 (]: 3 of 4 START sql table model fx_marts.fct_fx_daily_returns ..................... [RUN]
+[0m15:21:15.833124 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_daily_returns'
+[0m15:21:15.833407 [debug] [Thread-3 (]: Began compiling node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:15.836026 [debug] [Thread-3 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_daily_returns"
+[0m15:21:15.837511 [debug] [Thread-3 (]: Began executing node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:15.838818 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:21:16.667789 [debug] [Thread-3 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_daily_returns"
+[0m15:21:16.669078 [debug] [Thread-3 (]: On model.fx_pipeline.fct_fx_daily_returns: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_daily_returns"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with base_rates as (
+    select date,base,target,rate,
+    lag(rate) over(
+        PARTITION by base,target
+        order by date 
+    ) as prev_rate 
+
+    from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`
+)
+
+select 
+  date,
+  base,target,rate,prev_rate,
+  case 
+     when prev_rate is null then 0.0
+     else round(((rate-prev_rate)/prev_rate)*100 , 4)
+
+  end as daily_return_pct
+
+from base_rates
+    );
+  
+[0m15:21:17.958699 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:4d66b345-eda5-43b7-b649-f309ced1659b&page=queryresults
+[0m15:21:19.791132 [debug] [Thread-3 (]: SQL status: OK in 1.832 seconds
+[0m15:21:20.307102 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC7A171FF0>]}
+[0m15:21:20.308353 [info ] [Thread-3 (]: 3 of 4 OK created sql table model fx_marts.fct_fx_daily_returns ................ [[32mCREATE TABLE (17.5k rows, 444.5 KiB processed)[0m in 4.47s]
+[0m15:21:20.309952 [debug] [Thread-3 (]: Finished running node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:20.311428 [debug] [Thread-4 (]: Began running node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:20.312677 [info ] [Thread-4 (]: 4 of 4 START sql table model fx_marts.fct_fx_rolling_volataility ............... [RUN]
+[0m15:21:20.314421 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_rolling_volataility'
+[0m15:21:20.315179 [debug] [Thread-4 (]: Began compiling node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:20.319308 [debug] [Thread-4 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_rolling_volataility"
+[0m15:21:20.322191 [debug] [Thread-4 (]: Began executing node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:20.328263 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:21:21.218623 [debug] [Thread-4 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_rolling_volataility"
+[0m15:21:21.221015 [debug] [Thread-4 (]: On model.fx_pipeline.fct_fx_rolling_volataility: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_rolling_volataility"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`fct_fx_rolling_volataility`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with returns as (
+    select * from `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+)
+
+select
+  date,base,target,rate,daily_return_pct,
+  round(STDDEV(daily_return_pct) over(
+    PARTITION BY base,target
+    order by date 
+    rows between 6 preceding and current row
+  ),4) as rolling_volataility_7d,
+
+  round(stddev(daily_return_pct) over (
+        partition by base, target
+        order by date
+        rows between 29 preceding and current row
+    ), 4) as rolling_volatility_30d
+
+from returns
+    );
+  
+[0m15:21:22.101321 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:d1bd03a1-1843-4254-8e25-c2d6b76944f7&page=queryresults
+[0m15:21:23.997749 [debug] [Thread-4 (]: SQL status: OK in 1.895 seconds
+[0m15:21:24.514883 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6954b132-cf40-4ea4-a196-52e67c9f971e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC7AA165D0>]}
+[0m15:21:24.515643 [info ] [Thread-4 (]: 4 of 4 OK created sql table model fx_marts.fct_fx_rolling_volataility .......... [[32mCREATE TABLE (17.5k rows, 581.3 KiB processed)[0m in 4.20s]
+[0m15:21:24.516395 [debug] [Thread-4 (]: Finished running node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:24.518781 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:21:24.519957 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:21:24.520463 [debug] [MainThread]: Connection 'list_currency-tracker-507607' was properly closed.
+[0m15:21:24.520892 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m15:21:24.521308 [debug] [MainThread]: Connection 'model.fx_pipeline.dim_date' was properly closed.
+[0m15:21:24.521735 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_rates' was properly closed.
+[0m15:21:24.522196 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_daily_returns' was properly closed.
+[0m15:21:24.522458 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_rolling_volataility' was properly closed.
+[0m15:21:24.522897 [info ] [MainThread]: 
+[0m15:21:24.523488 [info ] [MainThread]: Finished running 1 incremental model, 3 table models in 0 hours 0 minutes and 16.75 seconds (16.75s).
+[0m15:21:24.525423 [debug] [MainThread]: Command end result
+[0m15:21:24.559241 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m15:21:24.562148 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m15:21:24.564998 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m15:21:24.571230 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m15:21:24.571574 [info ] [MainThread]: 
+[0m15:21:24.572155 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:21:24.572901 [info ] [MainThread]: 
+[0m15:21:24.573435 [error] [MainThread]: [[31mERROR[0m]: in model dim_date (models\marts\dim_date.sql)
+[0m15:21:24.573958 [error] [MainThread]:   Database Error in model dim_date (models\marts\dim_date.sql)
+  Function not found: formate_date; Did you mean format_date? at [26:4]
+  compiled code at target\run\fx_pipeline\models\marts\dim_date.sql
+[0m15:21:24.574530 [info ] [MainThread]: 
+[0m15:21:24.575103 [info ] [MainThread]:   compiled code at target\compiled\fx_pipeline\models\marts\dim_date.sql
+[0m15:21:24.575475 [info ] [MainThread]: 
+[0m15:21:24.575852 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m15:21:24.576702 [debug] [MainThread]: Command `dbt build` failed at 15:21:24.576605 after 19.09 seconds
+[0m15:21:24.577022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC530B2850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC7A624F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC57016970>]}
+[0m15:21:24.577381 [debug] [MainThread]: Flushing usage events
+[0m15:21:26.123589 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:21:40.610419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216DE376E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216E0BDFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216E0BDF9D0>]}
+
+
+============================== 15:21:40.618492 | 98b5c32e-d141-4ac7-8ffd-e844f9ae2654 ==============================
+[0m15:21:40.618492 [info ] [MainThread]: Running with dbt=1.12.4
+[0m15:21:40.620175 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt build --select marts', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\HP\\OneDrive\\Desktop\\GitHub\\FX_Rate_Analytics\\dbt_project\\logs'}
+[0m15:21:41.701691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216DEAE23F0>]}
+[0m15:21:41.748223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216DDE7FBD0>]}
+[0m15:21:41.748862 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m15:21:42.005241 [debug] [MainThread]: checksum: eea1dd9bfa665a1cd0407d56aaac0815f19c453a70bcb54a59db2e7cc74d1059, vars: {}, profile: fx_pipeline, target: dev, version: 1.12.4
+[0m15:21:42.171466 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:21:42.172069 [debug] [MainThread]: Partial parsing: updated file: fx_pipeline://models\marts\dim_date.sql
+[0m15:21:42.404407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021683A0C850>]}
+[0m15:21:42.513119 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m15:21:42.515949 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m15:21:42.539781 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m15:21:42.577243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021683D036B0>]}
+[0m15:21:42.577846 [info ] [MainThread]: Found 5 models, 4 data tests, 1 seed, 1 source, 561 macros
+[0m15:21:42.579771 [info ] [MainThread]: 
+[0m15:21:42.580361 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:21:42.580681 [info ] [MainThread]: 
+[0m15:21:42.581185 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:21:42.584793 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607'
+[0m15:21:42.585183 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:21:44.835709 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_currency-tracker-507607_fx_marts'
+[0m15:21:44.836656 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:21:46.114594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021683DFB770>]}
+[0m15:21:46.115593 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:21:46.124892 [debug] [Thread-1 (]: Began running node model.fx_pipeline.dim_date
+[0m15:21:46.126982 [debug] [Thread-2 (]: Began running node model.fx_pipeline.fct_fx_rates
+[0m15:21:46.126140 [info ] [Thread-1 (]: 1 of 4 START sql table model fx_marts.dim_date ................................. [RUN]
+[0m15:21:46.129670 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.fx_pipeline.dim_date'
+[0m15:21:46.130505 [debug] [Thread-1 (]: Began compiling node model.fx_pipeline.dim_date
+[0m15:21:46.138762 [debug] [Thread-1 (]: Writing injected SQL for node "model.fx_pipeline.dim_date"
+[0m15:21:46.128523 [info ] [Thread-2 (]: 2 of 4 START sql incremental model fx_marts.fct_fx_rates ....................... [RUN]
+[0m15:21:46.140815 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_rates'
+[0m15:21:46.141732 [debug] [Thread-2 (]: Began compiling node model.fx_pipeline.fct_fx_rates
+[0m15:21:46.154159 [debug] [Thread-2 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_rates"
+[0m15:21:46.155218 [debug] [Thread-1 (]: Began executing node model.fx_pipeline.dim_date
+[0m15:21:46.217779 [debug] [Thread-1 (]: Writing runtime sql for node "model.fx_pipeline.dim_date"
+[0m15:21:46.218621 [debug] [Thread-2 (]: Began executing node model.fx_pipeline.fct_fx_rates
+[0m15:21:46.258767 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:21:46.260586 [debug] [Thread-1 (]: On model.fx_pipeline.dim_date: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.dim_date"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`dim_date`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with date_spine as(
+    select day_date from 
+    unnest(generate_date_array('2021-01-01', '2030-12-31', interval 1 day)) as day_date
+)
+
+select 
+   day_date as date, 
+   extract(year from day_date) as year, 
+   extract(quarter from day_date) as quarter,
+   extract(month from day_date) as month,  
+   format_date('%B',day_date) as month_name,
+   extract(day from day_date) as day_of_month, 
+   extract(dayofweek from day_date) as day_of_week, 
+   format_date('%A',day_date) as day_name,
+   case
+      when extract(dayofweek from day_date) in (1,7) then true
+      else false
+    end as is_weekend
+
+from date_spine
+    );
+  
+[0m15:21:46.261045 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:21:47.245282 [debug] [Thread-2 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_rates"
+[0m15:21:47.246482 [debug] [Thread-2 (]: On model.fx_pipeline.fct_fx_rates: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_rates"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+                
+                
+            
+                
+                
+            
+                
+                
+            
+        
+    
+
+    
+
+    merge into `currency-tracker-507607`.`fx_marts`.`fct_fx_rates` as DBT_INTERNAL_DEST
+        using (
+
+select rate_date as date,base_currency as base,target_currency as target,exchange_rate as rate,
+loaded_at from `currency-tracker-507607`.`fx_marts`.`stg_fx_rates`
+
+
+    where rate_date > (select max(date) from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`)
+
+        ) as DBT_INTERNAL_SOURCE
+        on (
+                    DBT_INTERNAL_SOURCE.date = DBT_INTERNAL_DEST.date
+                ) and (
+                    DBT_INTERNAL_SOURCE.base = DBT_INTERNAL_DEST.base
+                ) and (
+                    DBT_INTERNAL_SOURCE.target = DBT_INTERNAL_DEST.target
+                )
+
+    
+    when matched then update set
+        `date` = DBT_INTERNAL_SOURCE.`date`,`base` = DBT_INTERNAL_SOURCE.`base`,`target` = DBT_INTERNAL_SOURCE.`target`,`rate` = DBT_INTERNAL_SOURCE.`rate`,`loaded_at` = DBT_INTERNAL_SOURCE.`loaded_at`
+    
+
+    when not matched then insert
+        (`date`, `base`, `target`, `rate`, `loaded_at`)
+    values
+        (`date`, `base`, `target`, `rate`, `loaded_at`)
+
+
+    
+[0m15:21:47.413044 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:f297bda0-6027-44e2-953d-58e65b1229d3&page=queryresults
+[0m15:21:48.146096 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:05b7d87f-6158-4b55-978c-36de18aeee2f&page=queryresults
+[0m15:21:48.714759 [debug] [Thread-1 (]: SQL status: OK in 1.301 seconds
+[0m15:21:49.294743 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021684654870>]}
+[0m15:21:49.295574 [info ] [Thread-1 (]: 1 of 4 OK created sql table model fx_marts.dim_date ............................ [[32mCREATE TABLE (3.7k rows, 0 processed)[0m in 3.16s]
+[0m15:21:49.296375 [debug] [Thread-1 (]: Finished running node model.fx_pipeline.dim_date
+[0m15:21:50.227173 [debug] [Thread-2 (]: SQL status: OK in 2.080 seconds
+[0m15:21:50.233675 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021683E104D0>]}
+[0m15:21:50.234804 [info ] [Thread-2 (]: 2 of 4 OK created sql incremental model fx_marts.fct_fx_rates .................. [[32mMERGE (0.0 rows, 1.1 MiB processed)[0m in 4.09s]
+[0m15:21:50.236565 [debug] [Thread-2 (]: Finished running node model.fx_pipeline.fct_fx_rates
+[0m15:21:50.238279 [debug] [Thread-3 (]: Began running node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:50.239543 [info ] [Thread-3 (]: 3 of 4 START sql table model fx_marts.fct_fx_daily_returns ..................... [RUN]
+[0m15:21:50.241306 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_daily_returns'
+[0m15:21:50.241980 [debug] [Thread-3 (]: Began compiling node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:50.243959 [debug] [Thread-3 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_daily_returns"
+[0m15:21:50.245297 [debug] [Thread-3 (]: Began executing node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:50.249893 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:21:51.134877 [debug] [Thread-3 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_daily_returns"
+[0m15:21:51.137517 [debug] [Thread-3 (]: On model.fx_pipeline.fct_fx_daily_returns: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_daily_returns"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with base_rates as (
+    select date,base,target,rate,
+    lag(rate) over(
+        PARTITION by base,target
+        order by date 
+    ) as prev_rate 
+
+    from `currency-tracker-507607`.`fx_marts`.`fct_fx_rates`
+)
+
+select 
+  date,
+  base,target,rate,prev_rate,
+  case 
+     when prev_rate is null then 0.0
+     else round(((rate-prev_rate)/prev_rate)*100 , 4)
+
+  end as daily_return_pct
+
+from base_rates
+    );
+  
+[0m15:21:51.918708 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:da70016f-f41f-4325-ae23-781699f5d522&page=queryresults
+[0m15:21:53.469520 [debug] [Thread-3 (]: SQL status: OK in 1.550 seconds
+[0m15:21:53.959683 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021683E41BD0>]}
+[0m15:21:53.961044 [info ] [Thread-3 (]: 3 of 4 OK created sql table model fx_marts.fct_fx_daily_returns ................ [[32mCREATE TABLE (17.5k rows, 444.5 KiB processed)[0m in 3.72s]
+[0m15:21:53.962706 [debug] [Thread-3 (]: Finished running node model.fx_pipeline.fct_fx_daily_returns
+[0m15:21:53.964394 [debug] [Thread-4 (]: Began running node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:53.965254 [info ] [Thread-4 (]: 4 of 4 START sql table model fx_marts.fct_fx_rolling_volataility ............... [RUN]
+[0m15:21:53.966333 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.fx_pipeline.fct_fx_rolling_volataility'
+[0m15:21:53.966900 [debug] [Thread-4 (]: Began compiling node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:53.970538 [debug] [Thread-4 (]: Writing injected SQL for node "model.fx_pipeline.fct_fx_rolling_volataility"
+[0m15:21:53.972875 [debug] [Thread-4 (]: Began executing node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:53.977379 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:21:54.813021 [debug] [Thread-4 (]: Writing runtime sql for node "model.fx_pipeline.fct_fx_rolling_volataility"
+[0m15:21:54.815371 [debug] [Thread-4 (]: On model.fx_pipeline.fct_fx_rolling_volataility: /* {"app": "dbt", "dbt_version": "1.12.4", "profile_name": "fx_pipeline", "target_name": "dev", "node_id": "model.fx_pipeline.fct_fx_rolling_volataility"} */
+
+  
+    
+
+    create or replace table `currency-tracker-507607`.`fx_marts`.`fct_fx_rolling_volataility`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      
+
+with returns as (
+    select * from `currency-tracker-507607`.`fx_marts`.`fct_fx_daily_returns`
+)
+
+select
+  date,base,target,rate,daily_return_pct,
+  round(STDDEV(daily_return_pct) over(
+    PARTITION BY base,target
+    order by date 
+    rows between 6 preceding and current row
+  ),4) as rolling_volataility_7d,
+
+  round(stddev(daily_return_pct) over (
+        partition by base, target
+        order by date
+        rows between 29 preceding and current row
+    ), 4) as rolling_volatility_30d
+
+from returns
+    );
+  
+[0m15:21:55.525549 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=currency-tracker-507607&j=bq:US:67be0928-c13b-4f91-be9a-8151fb638cb7&page=queryresults
+[0m15:21:57.614244 [debug] [Thread-4 (]: SQL status: OK in 2.088 seconds
+[0m15:21:58.117412 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '98b5c32e-d141-4ac7-8ffd-e844f9ae2654', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021684631E50>]}
+[0m15:21:58.118840 [info ] [Thread-4 (]: 4 of 4 OK created sql table model fx_marts.fct_fx_rolling_volataility .......... [[32mCREATE TABLE (17.5k rows, 581.3 KiB processed)[0m in 4.15s]
+[0m15:21:58.120546 [debug] [Thread-4 (]: Finished running node model.fx_pipeline.fct_fx_rolling_volataility
+[0m15:21:58.123234 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:21:58.124125 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:21:58.124459 [debug] [MainThread]: Connection 'list_currency-tracker-507607' was properly closed.
+[0m15:21:58.124770 [debug] [MainThread]: Connection 'list_currency-tracker-507607_fx_marts' was properly closed.
+[0m15:21:58.125329 [debug] [MainThread]: Connection 'model.fx_pipeline.dim_date' was properly closed.
+[0m15:21:58.125825 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_rates' was properly closed.
+[0m15:21:58.126301 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_daily_returns' was properly closed.
+[0m15:21:58.126805 [debug] [MainThread]: Connection 'model.fx_pipeline.fct_fx_rolling_volataility' was properly closed.
+[0m15:21:58.127486 [info ] [MainThread]: 
+[0m15:21:58.128308 [info ] [MainThread]: Finished running 1 incremental model, 3 table models in 0 hours 0 minutes and 15.55 seconds (15.55s).
+[0m15:21:58.130096 [debug] [MainThread]: Command end result
+[0m15:21:58.171928 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\manifest.json
+[0m15:21:58.175975 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\semantic_manifest.json
+[0m15:21:58.179904 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\osi_document.json
+[0m15:21:58.189356 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HP\OneDrive\Desktop\GitHub\FX_Rate_Analytics\dbt_project\target\run_results.json
+[0m15:21:58.189946 [info ] [MainThread]: 
+[0m15:21:58.190967 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:21:58.192091 [info ] [MainThread]: 
+[0m15:21:58.192674 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m15:21:58.193664 [debug] [MainThread]: Command `dbt build` succeeded at 15:21:58.193547 after 17.75 seconds
+[0m15:21:58.194122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002168211A850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216DCCE2850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216E0C2E970>]}
+[0m15:21:58.194603 [debug] [MainThread]: Flushing usage events
+[0m15:21:59.615344 [debug] [MainThread]: An error was encountered while trying to flush usage events
